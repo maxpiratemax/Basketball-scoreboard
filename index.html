@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bascetball scoreboard</title>
+    <link rel="stylesheet" href="reset-css.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="cart">
+                <div class="cart__title">HOME</div>
+                <div class="cart__number">
+                    <div class="cart__top" id="home_cart_number">00</div>
+                    88
+                </div>
+                <div class="cart__buttons">
+                    <div class="cart__button" onclick="home__cart__button_01()">+1</div>
+                    <div class="cart__button" onclick="home__cart__button_02()">+2</div>
+                    <div class="cart__button" onclick="home__cart__button_03()">+3</div>
+                </div>
+            </div>
+            <div class="cart">
+                <div class="cart__title">GUEST</div>
+                <div class="cart__number">
+                    <div class="cart__top" id="guest_cart_number">00</div>
+                    88
+                </div>
+                <div class="cart__buttons">
+                    <div class="cart__button" onclick="guest__cart__button_01()">+1</div>
+                    <div class="cart__button" onclick="guest__cart__button_02()">+2</div>
+                    <div class="cart__button" onclick="guest__cart__button_03()">+3</div>
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+            <div class="clear__button" onClick="btn_clear()">CLEAR</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

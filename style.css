@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Cursed Timer ULiL";
+    src: url("font/CursedTimerUlil-Aznm.ttf") format("truetype");
+}
+
+body {
+    background: #1b244a;
+}
+.main-container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 68px 85px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.cart {
+    width: 155px;
+    margin-bottom: 26px;
+}
+.cart__title {
+    text-align: center;
+    font-family: "Verdana";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    text-align: center;
+    color: #eeeeee;
+    margin-bottom: 21px;
+}
+.cart__number {
+    width: 155px;
+    height: 120px;
+    background: #080001;
+    border-radius: 5px;
+    font-family: "Cursed Timer ULiL";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+    text-align: center;
+    color: #9aabd825;
+    margin-bottom: 26px;
+    position: relative;
+}
+.cart__top {
+    position: absolute;
+    top: 0;
+    left: 21px;
+    color: #f94f6d;
+}
+
+.cart__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart__button {
+    box-sizing: border-box;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #9aabd8;
+    border-radius: 5px;
+    font-family: "Cursed Timer ULiL";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #9aabd8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s linear, color 0.2s linear;
+}
+.cart__button:hover {
+    background-color: #9aabd8;
+    color: #080001;
+}
+.clear{
+    display: flex;
+}
+.clear__button {
+    box-sizing: border-box;
+    width: 115px;
+    height: 45px;
+    border: 2px solid #9aabd8;
+    border-radius: 5px;
+    font-family: "Cursed Timer ULiL";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #9aabd8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s linear, color 0.2s linear;
+}
+.clear__button:hover {
+    background-color: #9aabd8;
+    color: #080001;
+}
+
+@media (max-width: 510px) {
+    .main-container{
+        padding: 18px 85px;
+    }
+    .cart__title{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .cart__number{
+        margin-bottom: 12px;
+    }
+    .container, .clear{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .clear__button{
+        width: 155px;
+    }
+}
